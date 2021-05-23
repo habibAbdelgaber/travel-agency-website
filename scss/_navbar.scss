@@ -1,0 +1,27 @@
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.2rem;
+    box-shadow: 0 0 .2rem $colorBlack;
+    &__logo{
+        font-size: 1.5rem;
+        i{
+            padding-right: .3rem;
+        }
+    }
+    &__list{
+        display: flex;
+        a{
+            padding: 1rem;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+        }
+
+        &--item{
+           
+        }
+    }
+
+}
+

@@ -1,0 +1,25 @@
+// DEFAULT SETTINGS
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+
+html{
+    font-size: 62.5%;  // 100px or 100%  / 16 * 10 == 62.5%.
+    box-sizing: border-box;
+}
+
+body{
+    line-height: 1.6;
+    font-family: 'New Tegomin', serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul li{
+    list-style-type: none;
+}
