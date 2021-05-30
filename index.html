@@ -8,29 +8,148 @@
     <title>TRAVEL-AGENCY</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Handlee&family=New+Tegomin&family=Satisfy&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100&family=Cinzel+Decorative&family=Handlee&family=Odibee+Sans&family=Stint+Ultra+Condensed&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="scss/main.css">
+    <!-- <script defer src="js/main.js"></script> -->
 </head>
 
 <body>
+    <!-- NAVBAR -->
     <nav class="nav">
-        <a href="#" class="nav__logo"><i class="fas fa-plane-departure"></i>Travel Agency</a>
+        <a href="#" class="nav__logo link"><i class="fas fa-plane-departure"></i>Travel Agency</a>
         <div class='menu'>
             <span class="menu__lines"></span>
             <span class="menu__lines"></span>
             <span class="menu__lines"></span>
         </div>
-        <ul class="nav__list menu-items">
-            <li class="nav__list--item"><a href="#">Home</a></li>
-            <li class="nav__list--item"><a href="#">About</a></li>
-            <li class="nav__list--item"><a href="#">Contact us</a></li>
-            <li class="nav__list--item"><a href="#">Country side</a></li>
-            <li class="nav__list--item"><a href="#">Abroad</a></li>
+        <ul class="nav__list menu-items" style="font-family: 'Handlee', cursive;">
+            <!-- <li class="nav__list--item"><a href="#" class="link">Home</a></li> -->
+            <li class="nav__list--item"><a href="#" class="link">About</a></li>
+            <li class="nav__list--item"><a href="#" class="link">Contact us <i class="fas fa-phone"></i></a></li>
+            <li class="nav__list--item"><a href="#tours" class="link">Pricing <i
+                        class="fas fa-hand-holding-usd"></i></a>
+            </li>
+            <li class="nav__list--item"><a href="#" class="link">Abroad<i class="fas fa-plane-departure"></i></a></li>
         </ul>
     </nav>
+    <!-- End of navbar -->
+    <!-- Header -->
+    <header class="header">
+        <div class="header-text">
+            <h1 class="heading">Travel the world</h1>
+            <p class="header-paragraph">
+                Lorem ipsum dolor sit amet consectetur.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque praesentium esse eius aut ea
+                <!-- voluptatibus delectus nulla dolorem necessitatibus odit itaque, accusamus iste vitae consequuntur sit
+                nesciunt natus commodi distinctio! -->
+                <a class="readmore" href="#">Read more &rarr;</a>
+            </p>
+        </div>
+        <img src="./assets/air-ballon-2.png" width="1000px" class="header-img" alt="Nature Image">
+        <div class="icons">
+            <h1 class="icons-letters">
+                <span class="center">T</span>
+                <span class="center">o</span>
+                <span class="center">u</span>
+                <span class="center">r</span>
+                <span class="center">i</span>
+                <span class="center">s</span>
+                <span class="center">m</span>
+            </h1>
+        </div>
+    </header>
+    <!-- End of Header -->
+    <!-- Tours -->
+    <div class="tours" id="tours">
+        <h1 class="tour-text">Top 3 popular tours</h1>
+        <div class="card-wrapper">
+            <div class="card">
+                <div class="front">
+                    <img src="/assets/along-river-img.jpg" class="card-img" alt="River image">
+                    <h1 class="card-title">Along the River</h1>
+                    <ul class="card-list">
+                        <li class="items">7 Days</li>
+                        <li class="items">Up to 10 tourists</li>
+                        <li class="items">3 tour guides</li>
+                        <li class="items">Difficult: easy</li>
+                        <li class="items">public tent</li>
+                        <li class="items">dinner: free</li>
+                    </ul>
+                    <button class="card-btn">Price&gt;&gt;</button>
+                </div>
+                <div class="back">
+                    <button class="card-btn">&lg;&lg; back</button>
+                    <h1 class="card-price">$300.99</h1>
+                    <button class="card-booking">Booking</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="front">
+                    <img src="/assets/along-river-img.jpg" class="card-img" alt="River image">
+                    <h1 class="card-title">Along the River</h1>
+                    <ul class="card-list">
+                        <li class="items">7 Days</li>
+                        <li class="items">Up to 10 tourists</li>
+                        <li class="items">3 tour guides</li>
+                        <li class="items">Difficult: easy</li>
+                        <li class="items">public tent</li>
+                        <li class="items">dinner: free</li>
+                    </ul>
+                    <button class="card-btn">Price&gt;&gt;</button>
+                </div>
+                <div class="back">
+                    <button class="card-btn">&lg;&lg; back</button>
+                    <h1 class="card-price">$300.99</h1>
+                    <button class="card-booking">Booking</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="front">
+                    <img src="/assets/along-river-img.jpg" class="card-img" alt="River image">
+                    <h1 class="card-title">Along the River</h1>
+                    <ul class="card-list">
+                        <li class="items">7 Days</li>
+                        <li class="items">Up to 10 tourists</li>
+                        <li class="items">3 tour guides</li>
+                        <li class="items">Difficult: easy</li>
+                        <li class="items">public tent</li>
+                        <li class="items">dinner: free</li>
+                    </ul>
+                    <button class="card-btn">Price&gt;&gt;</button>
+                </div>
+                <div class="back">
+                    <button class="card-btn">&lg;&lg; back</button>
+                    <h1 class="card-price">$300.99</h1>
+                    <button class="card-booking">Booking</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="front">
+                    <img src="/assets/along-river-img.jpg" class="card-img" alt="River image">
+                    <h1 class="card-title">Along the River</h1>
+                    <ul class="card-list">
+                        <li class="items">7 Days</li>
+                        <li class="items">Up to 10 tourists</li>
+                        <li class="items">3 tour guides</li>
+                        <li class="items">Difficult: easy</li>
+                        <li class="items">public tent</li>
+                        <li class="items">dinner: free</li>
+                    </ul>
+                    <button class="card-btn">Price&gt;&gt;</button>
+                </div>
+                <div class="back">
+                    <button class="card-btn">&lg;&lg; back</button>
+                    <h1 class="card-price">$300.99</h1>
+                    <button class="card-booking">Booking</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of tours -->
     <div class="container"></div>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

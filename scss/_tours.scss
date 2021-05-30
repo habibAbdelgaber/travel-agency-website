@@ -1,0 +1,57 @@
+.tours{
+    width: 90%;
+    margin: 0 auto;
+    .tour-text{
+        text-align: center;
+        letter-spacing: 1rem;
+        font-size: 3rem;
+        color: $color-green-light;
+        font-family: 'Cinzel Decorative', cursive;
+        padding: 2rem 0;
+        text-transform: uppercase;
+    }
+    .card-wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        .card{
+            text-align: center;
+            flex-basis: 20%;
+            
+            .front{
+                position: relative;
+                box-shadow: 0 0 .2rem $color-black;
+                border-radius: .3rem;
+                .card-img{
+                    width: 100%;
+                    border-radius: .3rem .3rem 0 0;
+    
+                }
+                .card-title{
+                    text-transform: uppercase;
+                    letter-spacing: .3rem;
+                    font-family: 'Cinzel Decorative', cursive;
+                    position: absolute;
+                    top: 12rem;
+                    font-size: 1rem;
+                    color: $color-white;
+                    left: 10rem;
+                }
+
+                .card-list{
+                    margin: 1rem 0;
+                    .items{
+                        width: 80%;
+                        margin: 1rem auto;
+                        border-bottom: .1rem $color-green-light solid;
+                        padding-bottom: .5rem;
+                        font-size: 1.6rem;
+                        letter-spacing: .2rem;
+                        color: $color-black;
+                    }
+                }
+            }
+        }
+    }
+
+}

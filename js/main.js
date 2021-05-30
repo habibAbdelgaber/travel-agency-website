@@ -1,6 +1,8 @@
 const menuItems = document.querySelector('.menu')
-const menuItemsList = document.querySelector('.menu-items')
+console.log(menuItems)
+const menuItemsList = document.querySelector('.nav__list')
+console.log(menuItemsList)
 
 menuItems.addEventListener('click', function(){
-    menuItemsList.classList.add('list-1').style.display = 'block'
+    menuItemsList.classList.toggle('nav__list-1')
 })

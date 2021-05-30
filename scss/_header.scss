@@ -1,0 +1,153 @@
+.header{
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .2)), url(/assets/nature.jpg) center no-repeat;
+    background-size: cover;
+    // background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    perspective: 150rem;
+    .header-text{
+        .heading{
+            font-size: 5rem;
+            padding-bottom: .5rem;
+            font-family: 'Cinzel Decorative', cursive;
+            text-transform: uppercase;
+            letter-spacing: .3rem;
+            color: $color-white;
+            font-weight: 100;
+            text-align: center;
+        }
+        .header-paragraph{
+            font-family: 'Big Shoulders Display', cursive;
+            color: $color-white;
+            font-size: 2rem;
+            text-align: center;
+            letter-spacing: .2rem;
+            text-align: center;
+            max-width: 60rem;
+            margin: 0 auto;
+            .readmore{
+                color: $color-green-light;
+            }
+        }
+    }
+    .header-img{
+        width: 40rem;
+        animation: ballon-movement 100s .5s infinite;
+        z-index: -10;
+    }
+
+    .icons{
+        position: absolute;
+        top: 3rem;
+        right: 2rem;
+        .icons-letters{
+            color: $color-white;
+            text-transform: uppercase;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .center{
+                background-color: $color-white;
+                font-family: 'Cinzel Decorative', cursive;
+                width: 3rem;
+                height: 3rem;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                color: $color-black;
+                margin: 0 .5rem;
+                text-align: center;
+                color: $color-green-light;
+                &:nth-child(1){
+                    background-color: $color-black;
+                    // animation: drop-letters;
+                    // animation-duration: 1s;
+                    // animation-delay: .1s;
+                    // animation-iteration-count: infinite;
+                    animation: drop-letters 4s .1s infinite;
+                }
+                &:nth-child(2){
+                    animation: drop-letters 4s .3s infinite;
+                    background-color: $color-yellow;
+                    color: $color-black;
+                }
+                &:nth-child(3){
+                    animation: drop-letters 4s .4s infinite;
+                    background-color: red;
+                    color: $color-white;
+                }
+                &:nth-child(4){
+                    animation: drop-letters 4s .5s infinite;
+                    color: blue;
+                    background-color: purple;
+                }
+                &:nth-child(5){
+                    animation: drop-letters 4s .6s infinite;
+                    background-color: pink;
+                    color: salmon;
+                }
+                &:nth-child(6){
+                    animation: drop-letters 4s .7s infinite;
+                    background-color: orangered;
+                    color: seagreen;
+                }
+                &:nth-child(7){
+                    animation: drop-letters 4s .8s infinite;
+                }
+            }
+        }
+    }
+}
+
+@keyframes drop-letters {
+    0%{
+        transform: translateY(0);
+    }
+    10%{
+        transform: translateY(0);
+    }
+
+    15%{
+        transform: translateY(-100%);
+    }
+
+    20%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+@keyframes ballon-movement {
+    0%{
+        transform: translateZ(40rem);
+        opacity: 1;
+    }
+
+    40%{
+        transform: translateZ(-500rem);
+        transform: translateX(50rem);
+        opacity: .8;
+    }
+    70%{
+        transform: translateZ(-1500rem);
+        opacity: .6;
+    }
+
+    80%{
+        transform: translateZ(-50rem);
+        transform: translateX(-100rem);
+        opacity: .8;
+    }
+
+    100%{
+        transform: translateZ(40);
+        opacity: 1;
+    }
+}

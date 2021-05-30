@@ -1,3 +1,8 @@
+// font-family: 'Cinzel Decorative', cursive;
+// font-family: 'Handlee', cursive;
+// font-family: 'Odibee Sans', cursive;
+//font-family: 'Big Shoulders Display', cursive;
+// font-family: 'Stint Ultra Condensed', cursive;
 // DEFAULT SETTINGS
 *, *::after, *::before{
     margin: 0;
@@ -9,11 +14,12 @@
 html{
     font-size: 62.5%;  // 100px or 100%  / 16 * 10 == 62.5%.
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body{
     line-height: 1.6;
-    font-family: 'New Tegomin', serif;
+    font-family: 'Stint Ultra Condensed', cursive;
 }
 
 a{
