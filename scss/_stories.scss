@@ -1,0 +1,50 @@
+.stories{
+    margin: 5rem 0;
+    background: url('../assets/island-beach-img.jpg') center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    // opacity: .4;
+    .story-title{
+        text-align: center;
+        padding-top: 3rem;
+        font-family: 'Cinzel Decorative', cursive;
+        color: #fff;
+        letter-spacing: .2rem;
+    }
+    .story-wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .story-bg{
+            background-color: rgba(214, 214, 214, .7);
+            padding: 5rem;
+            margin: 4rem;
+            width: 70%;
+            box-shadow: 0 2rem 5rem rgba(51, 51, 51, .5);
+            transform: skew(20deg);
+            .story{
+                display: flex;
+                transform: skew(-20deg);
+                .story-img{
+                    width: 10rem;
+                    height: 10rem;
+                    border-radius: 50%;
+                }
+                .story-text{
+                    margin: 0 1rem;
+                    .story-heading{
+                        font-family: 'Cinzel Decorative', cursive;
+                        color: $color-green-light;
+                    }
+                    .story-paragraph{
+                        font-family: 'Cinzel Decorative', cursive;
+                        max-width: 65rem;
+                        padding: 0.5rem 0;
+                        line-height: 1.7;
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+}

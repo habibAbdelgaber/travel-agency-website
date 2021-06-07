@@ -1,57 +1,116 @@
 .tours{
     width: 90%;
-    margin: 0 auto;
-    .tour-text{
-        text-align: center;
-        letter-spacing: 1rem;
-        font-size: 3rem;
-        color: $color-green-light;
-        font-family: 'Cinzel Decorative', cursive;
-        padding: 2rem 0;
-        text-transform: uppercase;
-    }
-    .card-wrapper{
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        .card{
-            text-align: center;
-            flex-basis: 20%;
-            
-            .front{
-                position: relative;
-                box-shadow: 0 0 .2rem $color-black;
-                border-radius: .3rem;
-                .card-img{
-                    width: 100%;
-                    border-radius: .3rem .3rem 0 0;
-    
-                }
-                .card-title{
-                    text-transform: uppercase;
-                    letter-spacing: .3rem;
-                    font-family: 'Cinzel Decorative', cursive;
-                    position: absolute;
-                    top: 12rem;
-                    font-size: 1rem;
-                    color: $color-white;
-                    left: 10rem;
-                }
+    margin: 4rem auto;
+}
 
-                .card-list{
-                    margin: 1rem 0;
-                    .items{
-                        width: 80%;
-                        margin: 1rem auto;
-                        border-bottom: .1rem $color-green-light solid;
-                        padding-bottom: .5rem;
-                        font-size: 1.6rem;
-                        letter-spacing: .2rem;
-                        color: $color-black;
-                    }
-                }
-            }
-        }
-    }
+.tour-text{
+    text-align: center;
+    padding-bottom: 3rem;
+    font-family: 'Cinzel Decorative', cursive;
+    letter-spacing: .2rem;
+}
 
+.card-wrapper{
+    display: flex;
+    justify-content: space-around;
+}
+
+.card{
+    width: 35rem;
+    position: relative;
+    perspective: 150rem;
+}
+
+.front{
+    text-align: center;
+    background-color: #bbb;
+    border-radius: .3rem;
+    position: relative;
+    z-index: 10;
+    opacity: .8;
+}
+
+.card-img{
+    width: 100%;
+    border-radius: .3rem .3rem 0 0;
+}
+
+.card-title{
+    font-size: 1.6rem;
+    letter-spacing: .2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: absolute;
+    top: 30%;
+    right: 1.5rem;
+    color: $color-white;
+    text-shadow: 0 0 1rem #000;
+}
+
+.card-list{
+    width: 80%;
+    margin: auto;
+    padding: 1rem 0 3rem 0;
+}
+
+.items{
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: $color-grey-light;
+    margin: 1rem 0;
+    border-bottom: .1rem solid $color-green-light;
+    padding-bottom: 1rem;
+}
+
+.back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: $color-green-light;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: .3rem;
+    box-shadow: 0 .5rem 1rem #bbb;
+    transform: translateZ(-5rem) translateX(3rem);
+    opacity: .5;
+}
+
+.card-price{
+    font-size: 2rem;
+    padding: 1rem 0;
+    font-weight: 700;
+    letter-spacing: .2rem;
+}
+
+.card-booking{
+    border: none;
+    padding: 1rem 1.5rem;
+    text-transform: uppercase;
+    border-radius: 10rem;
+    background-color: rgb(66, 197, 66);
+    font-family: 'Cinzel Decorative', cursive;
+    color: $color-white;
+    transition: background-color 2s ease-in;
+    cursor: pointer;
+    &:hover{
+        background-color: rgb(20, 124, 20);
+    }
+}
+
+.card-btn{
+    position: absolute;
+    top: .5rem;
+    left: .5rem;
+    border: none;
+    padding: .5rem .7rem;
+    border-radius: 10rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: 'Cinzel Decorative', cursive;
+    letter-spacing: .2rem;
+    background-color: rgb(137, 236, 180);
+    color: $color-white;
 }

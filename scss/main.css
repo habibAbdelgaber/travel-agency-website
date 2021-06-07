@@ -367,73 +367,207 @@ a.link {
   }
 }
 
-.tours {
-  width: 90%;
-  margin: 0 auto;
+.stories {
+  margin: 5rem 0;
+  background: url("../assets/island-beach-img.jpg") center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.tours .tour-text {
+.stories .story-title {
   text-align: center;
-  letter-spacing: 1rem;
-  font-size: 3rem;
-  color: #90ee90;
+  padding-top: 3rem;
   font-family: 'Cinzel Decorative', cursive;
-  padding: 2rem 0;
-  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: .2rem;
 }
 
-.tours .card-wrapper {
+.stories .story-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
 }
 
-.tours .card-wrapper .card {
+.stories .story-wrapper .story-bg {
+  background-color: rgba(214, 214, 214, 0.7);
+  padding: 5rem;
+  margin: 4rem;
+  width: 70%;
+  -webkit-box-shadow: 0 2rem 5rem rgba(51, 51, 51, 0.5);
+          box-shadow: 0 2rem 5rem rgba(51, 51, 51, 0.5);
+  -webkit-transform: skew(20deg);
+          transform: skew(20deg);
+}
+
+.stories .story-wrapper .story-bg .story {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transform: skew(-20deg);
+          transform: skew(-20deg);
+}
+
+.stories .story-wrapper .story-bg .story .story-img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+}
+
+.stories .story-wrapper .story-bg .story .story-text {
+  margin: 0 1rem;
+}
+
+.stories .story-wrapper .story-bg .story .story-text .story-heading {
+  font-family: 'Cinzel Decorative', cursive;
+  color: #90ee90;
+}
+
+.stories .story-wrapper .story-bg .story .story-text .story-paragraph {
+  font-family: 'Cinzel Decorative', cursive;
+  max-width: 65rem;
+  padding: 0.5rem 0;
+  line-height: 1.7;
+  font-size: 1.5rem;
+}
+
+.tours {
+  width: 90%;
+  margin: 4rem auto;
+}
+
+.tour-text {
   text-align: center;
-  -ms-flex-preferred-size: 20%;
-      flex-basis: 20%;
+  padding-bottom: 3rem;
+  font-family: 'Cinzel Decorative', cursive;
+  letter-spacing: .2rem;
 }
 
-.tours .card-wrapper .card .front {
+.card-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.card {
+  width: 35rem;
   position: relative;
-  -webkit-box-shadow: 0 0 0.2rem #000;
-          box-shadow: 0 0 0.2rem #000;
-  border-radius: .3rem;
+  -webkit-perspective: 150rem;
+          perspective: 150rem;
 }
 
-.tours .card-wrapper .card .front .card-img {
+.front {
+  text-align: center;
+  background-color: #bbb;
+  border-radius: .3rem;
+  position: relative;
+  z-index: 10;
+  opacity: .8;
+}
+
+.card-img {
   width: 100%;
   border-radius: .3rem .3rem 0 0;
 }
 
-.tours .card-wrapper .card .front .card-title {
-  text-transform: uppercase;
-  letter-spacing: .3rem;
-  font-family: 'Cinzel Decorative', cursive;
-  position: absolute;
-  top: 12rem;
-  font-size: 1rem;
-  color: #fff;
-  left: 10rem;
-}
-
-.tours .card-wrapper .card .front .card-list {
-  margin: 1rem 0;
-}
-
-.tours .card-wrapper .card .front .card-list .items {
-  width: 80%;
-  margin: 1rem auto;
-  border-bottom: 0.1rem #90ee90 solid;
-  padding-bottom: .5rem;
+.card-title {
   font-size: 1.6rem;
   letter-spacing: .2rem;
-  color: #000;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: absolute;
+  top: 30%;
+  right: 1.5rem;
+  color: #fff;
+  text-shadow: 0 0 1rem #000;
+}
+
+.card-list {
+  width: 80%;
+  margin: auto;
+  padding: 1rem 0 3rem 0;
+}
+
+.items {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #eee;
+  margin: 1rem 0;
+  border-bottom: 0.1rem solid #90ee90;
+  padding-bottom: 1rem;
+}
+
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: #90ee90;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: .3rem;
+  -webkit-box-shadow: 0 .5rem 1rem #bbb;
+          box-shadow: 0 .5rem 1rem #bbb;
+  -webkit-transform: translateZ(-5rem) translateX(3rem);
+          transform: translateZ(-5rem) translateX(3rem);
+  opacity: .5;
+}
+
+.card-price {
+  font-size: 2rem;
+  padding: 1rem 0;
+  font-weight: 700;
+  letter-spacing: .2rem;
+}
+
+.card-booking {
+  border: none;
+  padding: 1rem 1.5rem;
+  text-transform: uppercase;
+  border-radius: 10rem;
+  background-color: #42c542;
+  font-family: 'Cinzel Decorative', cursive;
+  color: #fff;
+  -webkit-transition: background-color 2s ease-in;
+  transition: background-color 2s ease-in;
+  cursor: pointer;
+}
+
+.card-booking:hover {
+  background-color: #147c14;
+}
+
+.card-btn {
+  position: absolute;
+  top: .5rem;
+  left: .5rem;
+  border: none;
+  padding: .5rem .7rem;
+  border-radius: 10rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: 'Cinzel Decorative', cursive;
+  letter-spacing: .2rem;
+  background-color: #89ecb4;
+  color: #fff;
 }
 /*# sourceMappingURL=main.css.map */

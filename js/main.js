@@ -6,3 +6,4 @@ console.log(menuItemsList)
 menuItems.addEventListener('click', function(){
     menuItemsList.classList.toggle('nav__list-1')
 })
+
