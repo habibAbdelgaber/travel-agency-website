@@ -1,3 +1,110 @@
+.contact {
+  padding: 1rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact .contact-heading {
+  text-align: center;
+  letter-spacing: .3rem;
+  text-transform: uppercase;
+  font-size: 2rem;
+  padding-bottom: 2rem;
+}
+
+.contact .form {
+  width: 50rem;
+  background-color: #90ee90;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 1rem 0;
+  border-radius: 1rem;
+}
+
+.contact .form .form-group {
+  position: relative;
+  margin: 1rem 0;
+}
+
+.contact .form .form-group .name-label {
+  position: absolute;
+  display: block;
+  margin: .3rem 0;
+  font-size: 1.5rem;
+  letter-spacing: .2rem;
+  text-transform: uppercase;
+  inset: -.5rem .5rem;
+}
+
+.contact .form .form-group .form-control {
+  width: 30rem;
+  padding: 2rem .3rem;
+  border: none;
+  font-family: 'Stint Ultra Condensed', cursive;
+  letter-spacing: .2rem;
+  background-color: #eee;
+}
+
+.contact .form .form-group .form-control:focus {
+  outline: none;
+}
+
+.contact .form .form-group .contact-cta {
+  background-color: #39eb39;
+  padding: 1.5rem 0;
+  cursor: pointer;
+  -webkit-transition: background-color 2s color 2s ease-in;
+  transition: background-color 2s color 2s ease-in;
+  text-transform: uppercase;
+  letter-spacing: .3rem;
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+.contact .form .form-group .contact-cta:hover {
+  background-color: #32ac32;
+  color: coral;
+}
+
+.contact .form .form-group .message-text {
+  resize: none;
+}
+
+.contact .form .form-group .remember-me {
+  color: #000;
+  letter-spacing: .2rem;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.contact .form .form-group .social-icons span {
+  display: block;
+  margin: 0 1rem;
+  padding: 1rem 0;
+}
+
+.contact .form .form-group .social-icons span:nth-child(1) {
+  color: #4747f0;
+}
+
+.contact .form .form-group .social-icons span:nth-child(2) {
+  color: #47c9f0;
+}
+
+footer {
+  border-top: 0.2rem #90ee90 solid;
+}
+
+footer .copyrights {
+  text-align: center;
+  padding: 1.5rem 0;
+  font-size: 1.4rem;
+}
+
 *, *::after, *::before {
   margin: 0;
   padding: 0;
@@ -23,6 +130,18 @@ a {
 
 ul li {
   list-style-type: none;
+}
+
+.flex-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header {
@@ -458,7 +577,7 @@ a.link {
 }
 
 .card {
-  width: 35rem;
+  width: 25rem;
   position: relative;
   -webkit-perspective: 150rem;
           perspective: 150rem;
@@ -471,6 +590,22 @@ a.link {
   position: relative;
   z-index: 10;
   opacity: .8;
+  -webkit-transition: all .5s ease-in;
+  -moz-transition: all .5s ease-in;
+  -o-transition: all .5s ease-in;
+  -webkit-transform: transform 4s opacity 4s;
+          transform: transform 4s opacity 4s;
+}
+
+.change > .front {
+  -webkit-transform: translateZ(5rem);
+          transform: translateZ(5rem);
+  -webkit-transform: translateY(-5rem);
+          transform: translateY(-5rem);
+  -webkit-transform: translateX(3rem);
+          transform: translateX(3rem);
+  z-index: 0;
+  opacity: .5;
 }
 
 .card-img {
@@ -530,6 +665,19 @@ a.link {
   -webkit-transform: translateZ(-5rem) translateX(3rem);
           transform: translateZ(-5rem) translateX(3rem);
   opacity: .5;
+  -webkit-transition: all .5s ease-in;
+  -moz-transition: all .5s ease-in;
+  -o-transition: all .5s ease-in;
+  -webkit-transform: transform 4s opacity 4s;
+          transform: transform 4s opacity 4s;
+}
+
+.change > .back {
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  opacity: .9;
 }
 
 .card-price {
