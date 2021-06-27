@@ -1,10 +1,15 @@
 const menuItems = document.querySelector('.menu')
+
 console.log(menuItems)
 const menuItemsList = document.querySelector('.nav__list')
 console.log(menuItemsList)
 
 menuItems.addEventListener('click', function(){
     menuItemsList.classList.toggle('nav__list-1')
+    document.querySelectorAll('.menu__lines').forEach(item =>{
+        item.classList.toggle('responsive-lines')
+        menuItems.classList.toggle('menu-click')
+    })
 })
 
 // console.log(document.querySelectorAll('.card-btn'))

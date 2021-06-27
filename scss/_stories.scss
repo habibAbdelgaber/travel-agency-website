@@ -10,6 +10,11 @@
         font-family: 'Cinzel Decorative', cursive;
         color: #fff;
         letter-spacing: .2rem;
+        @media (max-width: 768px) {
+            font-size: 1rem;
+            font-weight: 100;
+            margin-top: 1rem;
+        }
     }
     .story-wrapper{
         display: flex;
@@ -17,24 +22,73 @@
         align-items: center;
         .story-bg{
             background-color: rgba(214, 214, 214, .7);
+            // background-color: #fff;
             padding: 5rem;
             margin: 4rem;
-            width: 70%;
+            transition: transform 1.5s ease-in-out;
+           
             box-shadow: 0 2rem 5rem rgba(51, 51, 51, .5);
             transform: skew(20deg);
+            @media (max-width: 768px){
+                width: 30rem;
+                transform: skew(0);
+                border-radius: 4rem 0 4rem 0;
+
+                box-shadow: 0 0 .7rem $color-black;
+                &:hover{
+                    transform: scale(1.1);
+                }
+                .readmore{
+                    display: block;
+                    text-align: center;
+                    font-size: 1.4rem;
+                }
+            }
             .story{
                 display: flex;
+                flex-wrap: wrap;
                 transform: skew(-20deg);
-                .story-img{
+                @media (max-width: 768px){
+                    transform: skew(0);
+
+                }
+
+                .story-img-content{
                     width: 10rem;
                     height: 10rem;
-                    border-radius: 50%;
+                    margin: 0 auto;
+                    border-radius: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    overflow: hidden;
+                    @media (max-width: 768px) {
+                        margin-top: -3rem;
+                    }
+                    .story-img{
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        margin: auto;
+                        text-align: center;
+                        align-self: center;
+                        @media (max-width: 768px){
+                            display: block;
+        
+                        }
+                    }
                 }
+
                 .story-text{
                     margin: 0 1rem;
                     .story-heading{
                         font-family: 'Cinzel Decorative', cursive;
                         color: $color-green-light;
+                        @media (max-width: 768px){
+                            font-size: 1.3rem;
+                            padding: 1rem 0;
+                        }
                     }
                     .story-paragraph{
                         font-family: 'Cinzel Decorative', cursive;
@@ -42,6 +96,9 @@
                         padding: 0.5rem 0;
                         line-height: 1.7;
                         font-size: 1.5rem;
+                        @media (max-width: 768px){
+                            font-size: 1rem;
+                        }
                     }
                 }
             }

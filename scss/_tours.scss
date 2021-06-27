@@ -13,6 +13,7 @@
 .card-wrapper{
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .card{
@@ -20,6 +21,11 @@
     width: 25rem;
     position: relative;
     perspective: 150rem;
+    transition: transform 1.5s ease-in-out;
+    &:hover{
+        transform: scale(1.1);
+
+    }
 }
 
 .front{

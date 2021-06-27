@@ -1,6 +1,14 @@
-# Sass or scss and flex assignment
+# Sass or scss and flex assignment 1
 As we have seen how powerful is scss and flexbox, it lets developer to write css code in a very simple way and more mantainable.
 In this assignment we are going build one of the most common layout in web development and that is navigation bar.
 I will be sending the image of the navbar that we will be building on our group on whatsapp.
 Hint! to make this navbar, we only are going to use flexbox.
 # Goodluck!!!
+
+
+
+
+# Sass or scss and flex assignment 2
+Below contact section add another testimonials section that displays at least 4 testimonials.
+Each testimonial should have tourist image, name, some text and tourists' friends images at least 3 images.
+

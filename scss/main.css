@@ -1,4 +1,9 @@
 .contact {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(153, 204, 0, 0.4)), to(rgba(0, 0, 0, 0.3))), url("../assets/island-beach-img.jpg");
+  background-image: linear-gradient(to right, rgba(153, 204, 0, 0.4), rgba(0, 0, 0, 0.3)), url("../assets/island-beach-img.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 1rem;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -16,7 +21,6 @@
 
 .contact .form {
   width: 50rem;
-  background-color: #90ee90;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -41,7 +45,7 @@
 }
 
 .contact .form .form-group .form-control {
-  width: 30rem;
+  width: 40rem;
   padding: 2rem .3rem;
   border: none;
   font-family: 'Stint Ultra Condensed', cursive;
@@ -161,8 +165,18 @@ ul li {
       -ms-flex-align: center;
           align-items: center;
   overflow: hidden;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-perspective: 150rem;
           perspective: 150rem;
+}
+
+@media (max-width: 768px) {
+  .header {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 .header .header-text .heading {
@@ -176,6 +190,13 @@ ul li {
   text-align: center;
 }
 
+@media (max-width: 768px) {
+  .header .header-text .heading {
+    font-size: 1.5rem;
+    margin-top: 13rem;
+  }
+}
+
 .header .header-text .header-paragraph {
   font-family: 'Big Shoulders Display', cursive;
   color: #fff;
@@ -185,6 +206,27 @@ ul li {
   text-align: center;
   max-width: 60rem;
   margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .header .header-text .header-paragraph {
+    max-width: 57rem;
+    padding: 0 1rem;
+  }
+  .header .header-text .header-paragraph .readmore {
+    display: block;
+    background-color: #fff;
+    border-radius: 10rem;
+    margin-top: 2rem;
+    color: #000 !important;
+    font-weight: 700;
+    text-transform: capitalize;
+    -webkit-transition: letter-spacing .2s ease-in;
+    transition: letter-spacing .2s ease-in;
+  }
+  .header .header-text .header-paragraph .readmore:hover {
+    letter-spacing: .5rem;
+  }
 }
 
 .header .header-text .header-paragraph .readmore {
@@ -404,6 +446,7 @@ ul li {
   padding: 1.2rem;
   -webkit-box-shadow: 0 0 0.2rem #000;
           box-shadow: 0 0 0.2rem #000;
+  width: 100%;
 }
 
 .nav__logo {
@@ -442,6 +485,11 @@ a.link {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+    -webkit-transition: all .5s ease-in;
+    -webkit-transition: -webkit-box-flex 5s;
+    transition: -webkit-box-flex 5s;
+    transition: flex 5s;
+    transition: flex 5s, -webkit-box-flex 5s, -ms-flex 5s;
   }
   .nav__list {
     width: 100%;
@@ -457,8 +505,6 @@ a.link {
   }
   .nav__list-1 {
     display: block;
-    -webkit-transition: all .9s ease-in;
-    transition: all .9s ease-in;
   }
   .nav__list-1--item:not(:nth-child(6)) {
     display: block;
@@ -473,6 +519,9 @@ a.link {
     left: 80%;
     cursor: pointer;
     z-index: 100;
+    -webkit-backface-visibility: hidden;
+    /* Safari */
+    backface-visibility: hidden;
   }
   .menu__lines {
     display: block;
@@ -480,9 +529,47 @@ a.link {
     height: 0.2rem;
     margin-top: 0.3rem;
     cursor: pointer;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+  }
+  .menu .responsive-lines:nth-child(1) {
+    background-color: #000;
+    -webkit-transform: rotate(-47deg);
+            transform: rotate(-47deg);
+    width: 2rem;
+    height: .3rem;
+    border-radius: 10rem;
+  }
+  .menu .responsive-lines:nth-child(2) {
+    display: none;
+  }
+  .menu .responsive-lines:nth-child(3) {
+    background-color: #000;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    margin-top: -.3rem;
+    width: 2rem;
+    height: .3rem;
+    border-radius: 10rem;
+  }
+  .menu-click {
+    margin-top: .6rem;
   }
   .link {
     color: #fff;
+  }
+  .card-wrapper .card {
+    margin: 1rem 0;
+  }
+  .contact .contact-heading {
+    margin-top: 1.5rem;
+  }
+  .contact .form {
+    width: 20rem;
+  }
+  .contact .form .form-group .form-control {
+    width: 30rem;
+    border-radius: .5rem;
   }
 }
 
@@ -499,6 +586,14 @@ a.link {
   font-family: 'Cinzel Decorative', cursive;
   color: #fff;
   letter-spacing: .2rem;
+}
+
+@media (max-width: 768px) {
+  .stories .story-title {
+    font-size: 1rem;
+    font-weight: 100;
+    margin-top: 1rem;
+  }
 }
 
 .stories .story-wrapper {
@@ -518,25 +613,92 @@ a.link {
   background-color: rgba(214, 214, 214, 0.7);
   padding: 5rem;
   margin: 4rem;
-  width: 70%;
+  -webkit-transition: -webkit-transform 1.5s ease-in-out;
+  transition: -webkit-transform 1.5s ease-in-out;
+  transition: transform 1.5s ease-in-out;
+  transition: transform 1.5s ease-in-out, -webkit-transform 1.5s ease-in-out;
   -webkit-box-shadow: 0 2rem 5rem rgba(51, 51, 51, 0.5);
           box-shadow: 0 2rem 5rem rgba(51, 51, 51, 0.5);
   -webkit-transform: skew(20deg);
           transform: skew(20deg);
 }
 
+@media (max-width: 768px) {
+  .stories .story-wrapper .story-bg {
+    width: 30rem;
+    -webkit-transform: skew(0);
+            transform: skew(0);
+    border-radius: 4rem 0 4rem 0;
+    -webkit-box-shadow: 0 0 0.7rem #000;
+            box-shadow: 0 0 0.7rem #000;
+  }
+  .stories .story-wrapper .story-bg:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  .stories .story-wrapper .story-bg .readmore {
+    display: block;
+    text-align: center;
+    font-size: 1.4rem;
+  }
+}
+
 .stories .story-wrapper .story-bg .story {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-transform: skew(-20deg);
           transform: skew(-20deg);
 }
 
-.stories .story-wrapper .story-bg .story .story-img {
+@media (max-width: 768px) {
+  .stories .story-wrapper .story-bg .story {
+    -webkit-transform: skew(0);
+            transform: skew(0);
+  }
+}
+
+.stories .story-wrapper .story-bg .story .story-img-content {
   width: 10rem;
   height: 10rem;
-  border-radius: 50%;
+  margin: 0 auto;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .stories .story-wrapper .story-bg .story .story-img-content {
+    margin-top: -3rem;
+  }
+}
+
+.stories .story-wrapper .story-bg .story .story-img-content .story-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+@media (max-width: 768px) {
+  .stories .story-wrapper .story-bg .story .story-img-content .story-img {
+    display: block;
+  }
 }
 
 .stories .story-wrapper .story-bg .story .story-text {
@@ -548,12 +710,25 @@ a.link {
   color: #90ee90;
 }
 
+@media (max-width: 768px) {
+  .stories .story-wrapper .story-bg .story .story-text .story-heading {
+    font-size: 1.3rem;
+    padding: 1rem 0;
+  }
+}
+
 .stories .story-wrapper .story-bg .story .story-text .story-paragraph {
   font-family: 'Cinzel Decorative', cursive;
   max-width: 65rem;
   padding: 0.5rem 0;
   line-height: 1.7;
   font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .stories .story-wrapper .story-bg .story .story-text .story-paragraph {
+    font-size: 1rem;
+  }
 }
 
 .tours {
@@ -574,6 +749,8 @@ a.link {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .card {
@@ -581,6 +758,15 @@ a.link {
   position: relative;
   -webkit-perspective: 150rem;
           perspective: 150rem;
+  -webkit-transition: -webkit-transform 1.5s ease-in-out;
+  transition: -webkit-transform 1.5s ease-in-out;
+  transition: transform 1.5s ease-in-out;
+  transition: transform 1.5s ease-in-out, -webkit-transform 1.5s ease-in-out;
+}
+
+.card:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .front {

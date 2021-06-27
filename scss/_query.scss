@@ -4,6 +4,10 @@
         position: relative;
         flex-direction: column;
         align-items: flex-start;
+        -webkit-transition: all .5s ease-in;
+        -moz-transition: all .5s ease-in;
+        -o-transition: all .5s ease-in;
+        transition: flex 5s;
         &__list{
             width: 100%;
             display: none;
@@ -16,7 +20,6 @@
 
        &__list-1{
         display: block;
-        transition: all .9s ease-in;
         &--item:not(:nth-child(6)){
             display: block;
             padding: 0.5rem 0;
@@ -33,19 +36,80 @@
         left: 80%;
         cursor: pointer;
         z-index: 100;
+        // transition: all 2s;
+        // margin-top: .5rem;
+        -webkit-backface-visibility: hidden; /* Safari */
+         backface-visibility: hidden;
         &__lines{
             display: block;
             background-color: $color-green-light;;
             height: 0.2rem;
             margin-top: 0.3rem;
             cursor: pointer;
+            backface-visibility: hidden;
 
+
+        }
+
+        .responsive-lines:nth-child(1){
+            background-color: $color-black;
+            transform: rotate(-47deg);
+            width: 2rem;
+            height: .3rem;
+            border-radius: 10rem;
+
+        }
+
+        .responsive-lines:nth-child(2){
+            display: none;
+
+        } 
+        
+        .responsive-lines:nth-child(3){
+            background-color: $color-black;
+            transform: rotate(45deg);
+            margin-top: -.3rem;
+            width: 2rem;
+            height: .3rem;
+            border-radius: 10rem;
+
+        }
+         
+    }
+
+    .menu-click{
+        margin-top: .6rem;
+        
+    }
+    
+    .link{
+        color: $color-white;
+    }
+   
+    
+    .card-wrapper{
+        // flex-direction: column;
+        .card{
+            margin: 1rem 0;
 
         }
     }
 
-    .link{
-        color: $color-white;
+    .contact{
+        .contact-heading{
+            margin-top: 1.5rem;
+        }
+        .form{
+            width: 20rem;
+            .form-group{
+                .form-control{
+                    width: 30rem;
+                    border-radius: .5rem;
+                }
+            }
+        }
+
     }
+
     
 }
