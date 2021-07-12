@@ -475,6 +475,98 @@ a.link {
   color: #90ee90;
 }
 
+.testimonials {
+  width: 95%;
+  margin: 3rem auto;
+}
+
+.testimonials .testimonials-heading {
+  padding: 1rem 0;
+  text-align: center;
+  letter-spacing: .2rem;
+  font-family: 'Cinzel Decorative', cursive;
+}
+
+.testimonials .testimonials-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.testimonials .testimonials-content .test {
+  -webkit-box-shadow: 0 0 .8rem #fafafa;
+          box-shadow: 0 0 .8rem #fafafa;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1rem .5rem;
+  border-radius: .5rem;
+}
+
+.testimonials .testimonials-content .test .test-1 .test-img {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+}
+
+.testimonials .testimonials-content .test .test-2 {
+  margin: 0 .5rem;
+}
+
+.testimonials .testimonials-content .test .test-2 .test-heading {
+  letter-spacing: .2rem;
+  padding-top: 1rem;
+}
+
+.testimonials .testimonials-content .test .test-2 .test-paragraph {
+  font-size: 1.2rem;
+  font-family: 'Cinzel Decorative', cursive;
+}
+
+.testimonials .testimonials-content .test .test-2 .test-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  margin-top: .5rem;
+}
+
+.testimonials .testimonials-content .test .test-2 .test-img .images {
+  display: block;
+  width: 3rem;
+  height: 3rem;
+  top: -1rem;
+  border-radius: 50%;
+  position: absolute;
+  left: 90%;
+}
+
+.testimonials .testimonials-content .test .test-2 .test-img .i-1 {
+  left: 85%;
+  z-index: 12;
+}
+
+.testimonials .testimonials-content .test .test-2 .test-img .i-2 {
+  left: 80%;
+  z-index: 11;
+}
+
+.testimonials .testimonials-content .test .test-2 .test-img .i-3 {
+  left: 72%;
+}
+
+.testimonials .testimonials-content .test .test-2 .test-img .test-paragraph-2 {
+  font-size: 1.2rem;
+  letter-spacing: .2rem;
+  font-family: 'Cinzel Decorative', cursive;
+}
+
 @media (max-width: 768px) {
   .nav {
     position: relative;
@@ -570,6 +662,12 @@ a.link {
   .contact .form .form-group .form-control {
     width: 30rem;
     border-radius: .5rem;
+  }
+  .testimonials-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 

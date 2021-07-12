@@ -1,0 +1,76 @@
+.testimonials{
+    width: 95%;
+    margin: 3rem auto;
+    .testimonials-heading{
+        padding: 1rem 0;
+        text-align: center;
+        // font-size: 1.2rem;
+        letter-spacing: .2rem;
+        font-family: 'Cinzel Decorative', cursive;
+    }
+
+    .testimonials-content{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .test{
+            box-shadow: 0 0 .8rem #fafafa;
+            padding: 1rem;
+            display: flex;
+            margin: 1rem .5rem;
+            border-radius: .5rem;
+            .test-1{
+                .test-img{
+                    width: 8rem;
+                    height: 8rem;
+                    border-radius: 50%;
+                }
+            }
+            .test-2{
+                margin: 0 .5rem;
+                .test-heading{
+                    letter-spacing: .2rem;
+                    padding-top: 1rem;
+                }
+                .test-paragraph{
+                    font-size: 1.2rem;
+                    // text-align: justify;
+                    font-family: 'Cinzel Decorative', cursive;
+                }
+                .test-img{
+                    display: flex;
+                    position: relative;
+                    margin-top: .5rem;
+                    .images{
+                        display: block;
+                        width: 3rem;
+                        height: 3rem;
+                        top: -1rem;
+                        border-radius: 50%;
+                        position: absolute;
+                        left: 90%;
+                    }
+
+                    .i-1{
+                        left: 85%;
+                        z-index: 12;
+                    }
+                    .i-2{
+                        left: 80%;
+                        z-index: 11;
+                    }
+                    .i-3{
+                        left: 72%;
+                        // z-index: 5;
+                    }
+                    .test-paragraph-2{
+                        font-size: 1.2rem;
+                        letter-spacing: .2rem;
+                    // text-align: justify;
+                    font-family: 'Cinzel Decorative', cursive;
+                    }
+                }
+            }
+        }
+    }
+}
